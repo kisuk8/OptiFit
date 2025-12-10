@@ -21,14 +21,22 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.optifit.ai.ChatGPT
+import kotlinx.coroutines.launch
+import androidx.lifecycle.viewmodel.compose.viewModel // (not needed but okay)
 
 data class ChatMessage(
     val text: String,
     val isUser: Boolean
 )
 
+
 @Composable
 fun ChatScreen(navController: NavController) {
+
+    //TODO: encode the API Key
+    val chatGPT = remember { ChatGPT("MY_API_KEY") }
+
     var messages by remember {
         mutableStateOf(listOf(
             ChatMessage("Hi, create a 3-day workout for fat loss", isUser = true),
@@ -150,14 +158,22 @@ fun ChatScreen(navController: NavController) {
                     ),
                     singleLine = true
                 )
+                val scope = rememberCoroutineScope()
+
                 IconButton(
                     onClick = {
                         if (inputText.isNotBlank()) {
-                            messages = messages + listOf(
-                                ChatMessage(inputText, true),
-                                ChatMessage("Great question! I'm generating a personalized plan for you...", false)
-                            )
+
+                            val userText = inputText
+
+                            messages = messages + ChatMessage(userText, true)
+
                             inputText = ""
+
+                            scope.launch {
+                                val aiResponse = chatGPT.ask(userText)
+                                messages = messages + ChatMessage(aiResponse, false)
+                            }
                         }
                     },
                     modifier = Modifier

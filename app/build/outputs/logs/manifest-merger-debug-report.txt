@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.navigation:navigation-common:2.7.0] /Users/axil/.gradle/caches/8.13/transforms/f59188f665ac63baffcd6c745b59596f/transformed/navigation-common-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.0] /Users/axil/.gradle/caches/8.13/transforms/e523d18780b1d3726db7245498aef1d5/transformed/navigation-runtime-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.0] /Users/axil/.gradle/caches/8.13/transforms/cb539d2c40c46bf7faa1c04214b97b4b/transformed/navigation-common-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
@@ -70,9 +70,13 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/axil/.gradle/caches/8
 		INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:5:5-25:19
-INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:5:5-25:19
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:7:5-27:19
+INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:7:5-27:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/57381f1181119846881c1a007a6371b3/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/57381f1181119846881c1a007a6371b3/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/axil/.gradle/caches/8.13/transforms/acf94210fb7bc94f64105a3f95de30c3/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
@@ -94,41 +98,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/axil
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] /Users/axil/.gradle/caches/8.13/transforms/69972dac3be18afc3e3f02a582ef39ee/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:8:9-54
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:13:9-45
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:15:9-45
 	android:dataExtractionRules
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:7:9-65
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:9:9-65
 activity#com.example.optifit.MainActivity
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:14:9-24:20
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:16:9-26:20
 	android:label
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:17:13-45
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:19:13-45
 	android:exported
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:18:13-36
 	android:theme
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:18:13-49
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:20:13-49
 	android:name
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:17:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml
