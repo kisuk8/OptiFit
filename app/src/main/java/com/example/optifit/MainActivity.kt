@@ -52,6 +52,9 @@ class MainActivity : ComponentActivity() {
                         composable("planner") {
                             PlannerScreen(navController)
                         }
+                        composable("preferences") {
+                            PreferencesScreen(navController)
+                        }
                         composable("workout/{workoutId}") { backStackEntry ->
                             val workoutId = backStackEntry.arguments?.getString("workoutId") ?: ""
                             WorkoutDetailScreen(navController, workoutId)
