@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
@@ -64,7 +65,8 @@ fun LoginScreen(navController: NavController) {
                     "OptiFit",
                     style = MaterialTheme.typography.headlineLarge,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(top = 24.dp)
+                    modifier = Modifier.padding(top = 24.dp),
+                    color = colorResource(id = R.color.white)
                 )
 
                 Text(
@@ -84,7 +86,8 @@ fun LoginScreen(navController: NavController) {
                 Text(
                     "Welcome Back",
                     style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = colorResource(id = R.color.white)
                 )
 
                 // Email Field
@@ -166,8 +169,10 @@ fun LoginScreen(navController: NavController) {
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     Divider(modifier = Modifier.weight(1f))
-                    Text("OR", style = MaterialTheme.typography.labelSmall)
+                    Text("OR", style = MaterialTheme.typography.labelSmall, color = colorResource(id = R.color.white))
                     Divider(modifier = Modifier.weight(1f))
+
+
                 }
 
                 // Social Login Buttons
@@ -197,7 +202,7 @@ fun LoginScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.Center,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Don't have an account? ")
+                Text("Don't have an account? ", color = colorResource(id = R.color.white))
                 Text(
                     "Sign Up",
                     fontWeight = FontWeight.Bold,

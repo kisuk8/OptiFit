@@ -2,10 +2,12 @@
 
 package com.example.optifit
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -17,13 +19,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.optifit.ai.ChatGPT
 import kotlinx.coroutines.launch
-import androidx.lifecycle.viewmodel.compose.viewModel // (not needed but okay)
 
 data class ChatMessage(
     val text: String,
@@ -76,19 +79,48 @@ fun ChatScreen(navController: NavController) {
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 item {
-                    // AI Avatar
+                    // Mascot / AI Avatar
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center
                     ) {
                         Box(
                             modifier = Modifier
-                                .size(50.dp)
+                                .height(100.dp)
                                 .clip(RoundedCornerShape(12.dp))
                                 .background(MaterialTheme.colorScheme.primaryContainer),
                             contentAlignment = Alignment.Center
                         ) {
-                            Text("🤖", fontSize = 28.sp)
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.padding(horizontal = 16.dp) // Add internal padding
+                            ) {
+                                Box(
+                                    modifier = Modifier
+                                        // Spacing between circle and text
+                                        .padding(end = 8.dp)
+                                        // Define the total size of the circle + turn square into circle
+                                        .size(80.dp)
+                                        .clip(CircleShape)
+                                        // Fill circle with color + add transparency
+                                        .background(colorResource(id = R.color.black).copy(alpha = 0.5f)),
+                                    contentAlignment = Alignment.Center // Ensure the image inside is centered
+                                ) {
+                                    // Adding the mascot in the cirlce
+                                    Image(
+                                        painter = painterResource(id = R.drawable.mascot_german_shepherd), // Uses your file
+                                        contentDescription = "AI Mascot",
+                                        modifier = Modifier.size(78.dp)
+                                    )
+                                }
+                                Text(
+                                    text = "Hi, I'm Flex! \nI've got your back. Need a diet tip or workout plan?",
+                                    modifier = Modifier.padding(start = 12.dp), // Space between dog and text
+                                    style = MaterialTheme.typography.labelLarge,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                )
+                            }
                         }
                     }
                 }
