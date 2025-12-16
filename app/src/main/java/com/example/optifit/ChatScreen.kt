@@ -2,6 +2,9 @@
 
 package com.example.optifit
 
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -19,6 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -28,26 +32,87 @@ import androidx.navigation.NavController
 import com.example.optifit.ai.ChatGPT
 import kotlinx.coroutines.launch
 
+// -------------------- DATA MODEL --------------------
 data class ChatMessage(
     val text: String,
     val isUser: Boolean
 )
 
-
+// -------------------- CHAT SCREEN --------------------
 @Composable
 fun ChatScreen(navController: NavController) {
 
-    //TODO: encode the API Key
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+
+    // ⚠️ Use BuildConfig.OPENAI_API_KEY in real app
     val chatGPT = remember { ChatGPT("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") }
 
     var messages by remember {
-        mutableStateOf(listOf(
-            ChatMessage("Hi, create a 3-day workout for fat loss", isUser = true),
-            ChatMessage("Sure! Here's a personalized 9-day workout plan for fat loss!\n\nDay 1: Full Body\nDay 2: Cardio & Core\nDay 3: Upper Body", isUser = false)
-        ))
+        mutableStateOf(
+            listOf(
+                ChatMessage(
+                    "Hi, I'm Flex! Upload a workout video and I’ll analyze your form 💪",
+                    false
+                )
+            )
+        )
     }
-    var inputText by remember { mutableStateOf("") }
 
+    var inputText by remember { mutableStateOf("") }
+    var selectedVideoUri by remember { mutableStateOf<Uri?>(null) }
+
+    // ---------------- VIDEO PICKER ----------------
+    val videoPickerLauncher =
+        rememberLauncherForActivityResult(
+            contract = ActivityResultContracts.GetContent()
+        ) { uri ->
+            selectedVideoUri = uri
+        }
+
+    // ---------------- HANDLE VIDEO UPLOAD ----------------
+    LaunchedEffect(selectedVideoUri) {
+        selectedVideoUri?.let { uri ->
+            messages = messages + ChatMessage(
+                "📹 Workout video uploaded. Analyzing your form...",
+                true
+            )
+
+            scope.launch {
+                // 1️⃣ Analyze video locally (post-set)
+                val summary =
+                    WorkoutVideoAnalyzer.analyze(context, uri)
+
+                messages = messages + ChatMessage(
+                    "📊 Analysis complete. Sending to coach...",
+                    false
+                )
+
+                // 2️⃣ Build coaching prompt
+                val prompt = """
+                    You are a certified personal trainer.
+                    Analyze the workout data below and give:
+                    - Main form issues
+                    - Injury risks
+                    - Coaching cues
+                    - One drill to improve
+
+                    Be concise and encouraging.
+
+                    $summary
+                """.trimIndent()
+
+                // 3️⃣ Send to ChatGPT
+                val response = chatGPT.ask(prompt)
+
+                messages = messages + ChatMessage(response, false)
+
+                selectedVideoUri = null
+            }
+        }
+    }
+
+    // ---------------- UI ----------------
     Scaffold(
         topBar = {
             TopAppBar(
@@ -65,12 +130,14 @@ fun ChatScreen(navController: NavController) {
             )
         }
     ) { paddingValues ->
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(paddingValues),
-            verticalArrangement = Arrangement.SpaceBetween
+                .padding(paddingValues)
         ) {
+
+            // ---------------- CHAT MESSAGES ----------------
             LazyColumn(
                 modifier = Modifier
                     .weight(1f)
@@ -78,8 +145,9 @@ fun ChatScreen(navController: NavController) {
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+
+                // Mascot header
                 item {
-                    // Mascot / AI Avatar
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center
@@ -93,38 +161,37 @@ fun ChatScreen(navController: NavController) {
                         ) {
                             Row(
                                 verticalAlignment = Alignment.CenterVertically,
-                                modifier = Modifier.padding(horizontal = 16.dp) // Add internal padding
+                                modifier = Modifier.padding(16.dp)
                             ) {
                                 Box(
                                     modifier = Modifier
-                                        // Spacing between circle and text
-                                        .padding(end = 8.dp)
-                                        // Define the total size of the circle + turn square into circle
                                         .size(80.dp)
                                         .clip(CircleShape)
-                                        // Fill circle with color + add transparency
-                                        .background(colorResource(id = R.color.black).copy(alpha = 0.5f)),
-                                    contentAlignment = Alignment.Center // Ensure the image inside is centered
+                                        .background(
+                                            colorResource(id = R.color.black)
+                                                .copy(alpha = 0.5f)
+                                        ),
+                                    contentAlignment = Alignment.Center
                                 ) {
-                                    // Adding the mascot in the cirlce
                                     Image(
-                                        painter = painterResource(id = R.drawable.mascot_german_shepherd), // Uses your file
+                                        painter = painterResource(
+                                            id = R.drawable.mascot_german_shepherd
+                                        ),
                                         contentDescription = "AI Mascot",
                                         modifier = Modifier.size(78.dp)
                                     )
                                 }
                                 Text(
-                                    text = "Hi, I'm Flex! \nI've got your back. Need a diet tip or workout plan?",
-                                    modifier = Modifier.padding(start = 12.dp), // Space between dog and text
-                                    style = MaterialTheme.typography.labelLarge,
-                                    fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    text = "Hi, I'm Flex!\nUpload a workout video and I’ll coach you.",
+                                    modifier = Modifier.padding(start = 12.dp),
+                                    fontWeight = FontWeight.Bold
                                 )
                             }
                         }
                     }
                 }
 
+                // Messages
                 items(messages) { message ->
                     if (message.isUser) {
                         Row(
@@ -138,11 +205,7 @@ fun ChatScreen(navController: NavController) {
                                     .padding(12.dp)
                                     .widthIn(max = 280.dp)
                             ) {
-                                Text(
-                                    message.text,
-                                    color = Color.White,
-                                    fontSize = 14.sp
-                                )
+                                Text(message.text, color = Color.White)
                             }
                         }
                     } else {
@@ -157,17 +220,14 @@ fun ChatScreen(navController: NavController) {
                                     .padding(12.dp)
                                     .widthIn(max = 280.dp)
                             ) {
-                                Text(
-                                    message.text,
-                                    fontSize = 14.sp
-                                )
+                                Text(message.text)
                             }
                         }
                     }
                 }
             }
 
-            // Message Input
+            // ---------------- INPUT BAR ----------------
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -175,6 +235,13 @@ fun ChatScreen(navController: NavController) {
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
+
+                // 📎 Video upload
+                IconButton(onClick = { videoPickerLauncher.launch("video/*") }) {
+                    Text("📎", fontSize = 22.sp)
+                }
+
+                // Text input
                 TextField(
                     value = inputText,
                     onValueChange = { inputText = it },
@@ -182,38 +249,38 @@ fun ChatScreen(navController: NavController) {
                     modifier = Modifier
                         .weight(1f)
                         .clip(RoundedCornerShape(24.dp)),
+                    singleLine = true,
                     colors = TextFieldDefaults.colors(
-                        unfocusedContainerColor = MaterialTheme.colorScheme.surfaceContainer,
-                        focusedContainerColor = MaterialTheme.colorScheme.surfaceContainer,
+                        unfocusedContainerColor =
+                            MaterialTheme.colorScheme.surfaceContainer,
+                        focusedContainerColor =
+                            MaterialTheme.colorScheme.surfaceContainer,
                         unfocusedIndicatorColor = Color.Transparent,
                         focusedIndicatorColor = Color.Transparent
-                    ),
-                    singleLine = true
+                    )
                 )
-                val scope = rememberCoroutineScope()
 
+                // Send
                 IconButton(
                     onClick = {
                         if (inputText.isNotBlank()) {
-
                             val userText = inputText
+                            inputText = ""
 
                             messages = messages + ChatMessage(userText, true)
 
-                            inputText = ""
-
                             scope.launch {
-                                val aiResponse = chatGPT.ask(userText)
-                                messages = messages + ChatMessage(aiResponse, false)
+                                val response = chatGPT.ask(userText)
+                                messages = messages + ChatMessage(response, false)
                             }
                         }
                     },
                     modifier = Modifier
                         .size(40.dp)
-                        .clip(RoundedCornerShape(50.dp))
+                        .clip(CircleShape)
                         .background(MaterialTheme.colorScheme.primary)
                 ) {
-                    Icon(Icons.Default.Send, contentDescription = "Send", tint = Color.White)
+                    Icon(Icons.Default.Send, null, tint = Color.White)
                 }
             }
         }

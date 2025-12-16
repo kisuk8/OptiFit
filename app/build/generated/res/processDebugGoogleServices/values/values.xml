@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">628891930648</string>
+    <string name="google_api_key" translatable="false">AIzaSyBUNBnMGpk3DFHIwDO5hg0ry1Kk-hZrjXM</string>
+    <string name="google_app_id" translatable="false">1:628891930648:android:9f5374842c02e74cc6736d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBUNBnMGpk3DFHIwDO5hg0ry1Kk-hZrjXM</string>
+    <string name="google_storage_bucket" translatable="false">optifit-e903e.firebasestorage.app</string>
+    <string name="project_id" translatable="false">optifit-e903e</string>
+</resources>

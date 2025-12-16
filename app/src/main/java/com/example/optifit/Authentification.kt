@@ -26,9 +26,13 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 fun LoginScreen(navController: NavController) {
+
+    val authViewModel: authViewModel = viewModel()
+
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var passwordVisible by remember { mutableStateOf(false) }
@@ -141,23 +145,24 @@ fun LoginScreen(navController: NavController) {
 
                 // Login Button
                 Button(
-                    onClick = { navController.navigate("home") {
-                        popUpTo("login") { inclusive = true }
-                    }},
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(50.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary
-                    ),
-                    shape = RoundedCornerShape(12.dp)
+                    onClick = {
+                        authViewModel.login(email, password) {
+                            navController.navigate("home") {
+                                popUpTo("login") { inclusive = true }
+                            }
+                        }
+                    },
+                    modifier = Modifier.fillMaxWidth().height(50.dp),
+                    enabled = !authViewModel.isLoading
                 ) {
-                    Text(
-                        "Sign In",
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 16.sp,
-                        color = Color.White
-                    )
+                    if (authViewModel.isLoading) {
+                        CircularProgressIndicator(
+                            color = Color.White,
+                            modifier = Modifier.size(20.dp)
+                        )
+                    } else {
+                        Text("Sign In", fontWeight = FontWeight.Bold)
+                    }
                 }
 
                 // Divider with text
@@ -222,6 +227,9 @@ fun LoginScreen(navController: NavController) {
 
 @Composable
 fun SignupScreen(navController: NavController) {
+
+    val authViewModel: authViewModel = viewModel()
+
     var name by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -362,24 +370,31 @@ fun SignupScreen(navController: NavController) {
 
                 // Sign Up Button
                 Button(
-                    onClick = { navController.navigate("home") {
-                        popUpTo("signup") { inclusive = true }
-                    }},
+                    onClick = {
+                        if (password != confirmPassword) {
+                            authViewModel.errorMessage = "Passwords do not match"
+                            return@Button
+                        }
+
+                        authViewModel.signup(email, password) {
+                            navController.navigate("home") {
+                                popUpTo("signup") { inclusive = true }
+                            }
+                        }
+                    },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary
-                    ),
-                    shape = RoundedCornerShape(12.dp),
-                    enabled = agreeToTerms && name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()
+                    enabled = agreeToTerms && !authViewModel.isLoading
                 ) {
-                    Text(
-                        "Create Account",
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 16.sp,
-                        color = Color.White
-                    )
+                    if (authViewModel.isLoading) {
+                        CircularProgressIndicator(
+                            color = Color.White,
+                            modifier = Modifier.size(20.dp)
+                        )
+                    } else {
+                        Text("Create Account", fontWeight = FontWeight.Bold)
+                    }
                 }
 
                 // Sign In Link

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.optifit.app-mergeDebugResources-39:/values-v30/values-v30.xml",
+            "outputFile": "com.example.optifit.app-mergeDebugResources-54:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/Users/axil/.gradle/caches/8.13/transforms/eb625729d6bae1f62e6cc3a9199aef9e/transformed/material3/res/values-v30/values-v30.xml",
+                    "source": "/Users/axil/.gradle/caches/8.13/transforms/e25438c040b4acc9130fdcd307448429/transformed/material3/res/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -6,7 +6,13 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#F9F9F9</color>
     <string name="app_name">OptiFit</string>
+    <string name="gcm_defaultSenderId" translatable="false">628891930648</string>
+    <string name="google_api_key" translatable="false">AIzaSyBUNBnMGpk3DFHIwDO5hg0ry1Kk-hZrjXM</string>
+    <string name="google_app_id" translatable="false">1:628891930648:android:9f5374842c02e74cc6736d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBUNBnMGpk3DFHIwDO5hg0ry1Kk-hZrjXM</string>
+    <string name="google_storage_bucket" translatable="false">optifit-e903e.firebasestorage.app</string>
+    <string name="project_id" translatable="false">optifit-e903e</string>
     <style name="Theme.OptiFit" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>
