@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "/Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/res/values-it/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,294,441,562,666,820,944,1060,1160,1313,1416,1566,1689,1841,2018,2081,2138",
-                        "endColumns": "100,146,120,103,153,123,115,99,152,102,149,122,151,176,62,56,72",
-                        "endOffsets": "293,440,561,665,819,943,1059,1159,1312,1415,1565,1688,1840,2017,2080,2137,2210"
-                    },
-                    "to": {
-                        "startLines": "14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1355,1460,1611,1736,1844,2002,2130,2250,2490,2647,2754,2908,3035,3191,3372,3439,3500",
-                        "endColumns": "104,150,124,107,157,127,119,103,156,106,153,126,155,180,66,60,76",
-                        "endOffsets": "1455,1606,1731,1839,1997,2125,2245,2349,2642,2749,2903,3030,3186,3367,3434,3495,3572"
-                    }
-                },
-                {
                     "source": "/Users/axil/.gradle/caches/8.13/transforms/2ec868425c692365bcaa16e301c86dee/transformed/material/res/values-it/values-it.xml",
                     "from": {
                         "startLines": "2",
@@ -69,6 +52,23 @@
                         "startOffsets": "11948",
                         "endColumns": "88",
                         "endOffsets": "12032"
+                    }
+                },
+                {
+                    "source": "/Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/res/values-it/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,294,441,562,666,820,944,1060,1160,1313,1416,1566,1689,1841,2018,2081,2138",
+                        "endColumns": "100,146,120,103,153,123,115,99,152,102,149,122,151,176,62,56,72",
+                        "endOffsets": "293,440,561,665,819,943,1059,1159,1312,1415,1565,1688,1840,2017,2080,2137,2210"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1355,1460,1611,1736,1844,2002,2130,2250,2490,2647,2754,2908,3035,3191,3372,3439,3500",
+                        "endColumns": "104,150,124,107,157,127,119,103,156,106,153,126,155,180,66,60,76",
+                        "endOffsets": "1455,1606,1731,1839,1997,2125,2245,2349,2642,2749,2903,3030,3186,3367,3434,3495,3572"
                     }
                 },
                 {
@@ -140,13 +140,13 @@
                     }
                 },
                 {
-                    "source": "/Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/res/values-it/values.xml",
+                    "source": "/Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/res/values-it/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "195",
+                        "startOffsets": "218",
                         "endColumns": "131",
-                        "endOffsets": "326"
+                        "endOffsets": "349"
                     },
                     "to": {
                         "startLines": "22",

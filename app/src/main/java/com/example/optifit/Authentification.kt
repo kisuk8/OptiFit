@@ -146,13 +146,31 @@ fun LoginScreen(navController: NavController) {
                 // Login Button
                 Button(
                     onClick = {
-                        authViewModel.login(email, password) {
-                            navController.navigate("home") {
-                                popUpTo("login") { inclusive = true }
+                        when {
+                            email.isBlank() -> {
+                                authViewModel.errorMessage = "Email is required"
+                            }
+                            !isValidEmail(email) -> {
+                                authViewModel.errorMessage = "Enter a valid email address"
+                            }
+                            password.isBlank() -> {
+                                authViewModel.errorMessage = "Password is required"
+                            }
+                            password.length < 6 -> {
+                                authViewModel.errorMessage = "Password must be at least 6 characters"
+                            }
+                            else -> {
+                                authViewModel.login(email, password) {
+                                    navController.navigate("home") {
+                                        popUpTo("login") { inclusive = true }
+                                    }
+                                }
                             }
                         }
                     },
-                    modifier = Modifier.fillMaxWidth().height(50.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp),
                     enabled = !authViewModel.isLoading
                 ) {
                     if (authViewModel.isLoading) {
@@ -371,21 +389,38 @@ fun SignupScreen(navController: NavController) {
                 // Sign Up Button
                 Button(
                     onClick = {
-                        if (password != confirmPassword) {
-                            authViewModel.errorMessage = "Passwords do not match"
-                            return@Button
-                        }
-
-                        authViewModel.signup(email, password) {
-                            navController.navigate("home") {
-                                popUpTo("signup") { inclusive = true }
+                        when {
+                            name.isBlank() -> {
+                                authViewModel.errorMessage = "Name is required"
+                            }
+                            email.isBlank() -> {
+                                authViewModel.errorMessage = "Email is required"
+                            }
+                            !isValidEmail(email) -> {
+                                authViewModel.errorMessage = "Enter a valid email"
+                            }
+                            password.length < 6 -> {
+                                authViewModel.errorMessage = "Password must be at least 6 characters"
+                            }
+                            password != confirmPassword -> {
+                                authViewModel.errorMessage = "Passwords do not match"
+                            }
+                            !agreeToTerms -> {
+                                authViewModel.errorMessage = "You must agree to the terms"
+                            }
+                            else -> {
+                                authViewModel.signup(email, password) {
+                                    navController.navigate("home") {
+                                        popUpTo("signup") { inclusive = true }
+                                    }
+                                }
                             }
                         }
                     },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
-                    enabled = agreeToTerms && !authViewModel.isLoading
+                    enabled = !authViewModel.isLoading
                 ) {
                     if (authViewModel.isLoading) {
                         CircularProgressIndicator(
@@ -443,4 +478,8 @@ fun SocialLoginButton(
             Text(label, fontWeight = FontWeight.Bold)
         }
     }
+}
+
+fun isValidEmail(email: String): Boolean {
+    return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
 }

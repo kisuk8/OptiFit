@@ -4,23 +4,6 @@
             "outputFile": "com.example.optifit.app-mergeDebugResources-54:/values-tl/values-tl.xml",
             "map": [
                 {
-                    "source": "/Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/res/values-tl/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "140",
-                        "endOffsets": "335"
-                    },
-                    "to": {
-                        "startLines": "22",
-                        "startColumns": "4",
-                        "startOffsets": "2384",
-                        "endColumns": "144",
-                        "endOffsets": "2524"
-                    }
-                },
-                {
                     "source": "/Users/axil/.gradle/caches/8.13/transforms/0a5d184e1ac1ea76557b38691ec4e9aa/transformed/browser-1.4.0/res/values-tl/values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -52,23 +35,6 @@
                         "startOffsets": "12040",
                         "endColumns": "88",
                         "endOffsets": "12124"
-                    }
-                },
-                {
-                    "source": "/Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/res/values-tl/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,296,468,602,707,861,993,1111,1220,1395,1498,1672,1806,1964,2139,2203,2265",
-                        "endColumns": "102,171,133,104,153,131,117,108,174,102,173,133,157,174,63,61,76",
-                        "endOffsets": "295,467,601,706,860,992,1110,1219,1394,1497,1671,1805,1963,2138,2202,2264,2341"
-                    },
-                    "to": {
-                        "startLines": "14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1325,1432,1608,1746,1855,2013,2149,2271,2529,2708,2815,2993,3131,3293,3472,3540,3606",
-                        "endColumns": "106,175,137,108,157,135,121,112,178,106,177,137,161,178,67,65,80",
-                        "endOffsets": "1427,1603,1741,1850,2008,2144,2266,2379,2703,2810,2988,3126,3288,3467,3535,3601,3682"
                     }
                 },
                 {
@@ -123,6 +89,23 @@
                     }
                 },
                 {
+                    "source": "/Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/res/values-tl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "218",
+                        "endColumns": "140",
+                        "endOffsets": "358"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "2384",
+                        "endColumns": "144",
+                        "endOffsets": "2524"
+                    }
+                },
+                {
                     "source": "/Users/axil/.gradle/caches/8.13/transforms/3e2398bc8cea59b2cfb9fcf159006d8c/transformed/core-1.17.0/res/values-tl/values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -137,6 +120,23 @@
                         "startOffsets": "406,503,605,706,803,910,1018,12869",
                         "endColumns": "96,101,100,96,106,107,121,100",
                         "endOffsets": "498,600,701,798,905,1013,1135,12965"
+                    }
+                },
+                {
+                    "source": "/Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/res/values-tl/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,296,468,602,707,861,993,1111,1220,1395,1498,1672,1806,1964,2139,2203,2265",
+                        "endColumns": "102,171,133,104,153,131,117,108,174,102,173,133,157,174,63,61,76",
+                        "endOffsets": "295,467,601,706,860,992,1110,1219,1394,1497,1671,1805,1963,2138,2202,2264,2341"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1325,1432,1608,1746,1855,2013,2149,2271,2529,2708,2815,2993,3131,3293,3472,3540,3606",
+                        "endColumns": "106,175,137,108,157,135,121,112,178,106,177,137,161,178,67,65,80",
+                        "endOffsets": "1427,1603,1741,1850,2008,2144,2266,2379,2703,2810,2988,3126,3288,3467,3535,3601,3682"
                     }
                 },
                 {
