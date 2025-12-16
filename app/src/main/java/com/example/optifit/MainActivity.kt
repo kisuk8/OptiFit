@@ -10,6 +10,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.optifit.ui.theme.OptiFitTheme
+import androidx.navigation.navArgument
+import androidx.navigation.NavType
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,6 +60,18 @@ class MainActivity : ComponentActivity() {
                         composable("workout/{workoutId}") { backStackEntry ->
                             val workoutId = backStackEntry.arguments?.getString("workoutId") ?: ""
                             WorkoutDetailScreen(navController, workoutId)
+                        }
+
+                        composable(
+                            route = "timer/{workoutName}",
+                            arguments = listOf(
+                                navArgument("workoutName") { type = NavType.StringType }
+                            )
+                        ) { backStackEntry ->
+                            WorkoutTimerScreen(
+                                navController = navController,
+                                workoutName = backStackEntry.arguments?.getString("workoutName") ?: "Workout"
+                            )
                         }
                     }
                 }

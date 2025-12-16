@@ -27,7 +27,9 @@ MERGED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/c
 MERGED from [androidx.compose.ui:ui-graphics-android:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/4097950731d642b378be804910f8d361/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:17:1-75:12
 MERGED from [androidx.browser:browser:1.4.0] /Users/axil/.gradle/caches/8.13/transforms/0a5d184e1ac1ea76557b38691ec4e9aa/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/axil/.gradle/caches/8.13/transforms/05347f57cc2ece0c372fa0c63a63a251/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/axil/.gradle/caches/8.13/transforms/0950b88a440fbdcc6e1538bf6387c6e5/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:2:1-7:12
@@ -59,11 +61,12 @@ MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/axil/.gradl
 MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/583edac93a836720f49823a76aebe7e3/transformed/datastore-preferences-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/ad3ececa69a842af7548ecade28303c6/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/91768184c3e87637e21db4a7f7540358/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/add85cdb86f9ac3524622f675b7e3bf8/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/axil/.gradle/caches/8.13/transforms/f800e0db397828081610b95f256ce225/transformed/play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/axil/.gradle/caches/8.13/transforms/fd89f42f700629a3c7bf79df88513bd9/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/axil/.gradle/caches/8.13/transforms/90608a635f0ebb0c10343fb8e8740eff/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/axil/.gradle/caches/8.13/transforms/98a830d555201b1c4ee79d4a063d3795/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/axil/.gradle/caches/8.13/transforms/0555762f3bcbfa047c1123c5d7b199dd/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/axil/.gradle/caches/8.13/transforms/7be302714ae3038409f30ff23ee360c4/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -92,6 +95,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/axil/.gradle/caches/
 MERGED from [androidx.tracing:tracing:1.2.0] /Users/axil/.gradle/caches/8.13/transforms/d4b668b453f1ac4af9bdd7d0968f73cd/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/axil/.gradle/caches/8.13/transforms/50fa59b620c5eaab637cde326f6242a1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/axil/.gradle/caches/8.13/transforms/3fbb693d4a628cd50b212271630b5a2c/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/axil/.gradle/caches/8.13/transforms/122e8ba2c76107d4ce315e227e7f63ac/transformed/grpc-android-1.62.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/a11a7fc9596c3636838522e85b022cb9/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/axil/.gradle/caches/8.13/transforms/7460a4618fcc7ff3b684b076d412d9d8/transformed/core-common-2.0.3/AndroidManifest.xml:2:1-21:12
 	package
 		INJECTED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml
@@ -107,6 +112,8 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/axil/Downloads/OptiFit/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/axil/.gradle/caches/8.13/transforms/8469aabf8c442a22b25d7f642d59c2fb/transformed/recaptcha-18.6.1/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/axil/.gradle/caches/8.13/transforms/8469aabf8c442a22b25d7f642d59c2fb/transformed/recaptcha-18.6.1/AndroidManifest.xml:7:5-67
 	android:name
@@ -120,8 +127,12 @@ MERGED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/c
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/d7eb277c2e9e0bdeefa721d2fde13f8a/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/axil/.gradle/caches/8.13/transforms/05347f57cc2ece0c372fa0c63a63a251/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/axil/.gradle/caches/8.13/transforms/05347f57cc2ece0c372fa0c63a63a251/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:22:5-39:19
@@ -140,12 +151,12 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/axil/.gradle/cac
 MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/axil/.gradle/caches/8.13/transforms/2f2e9a729fe69034f7c55a413841a8c4/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:23:5-33:19
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/axil/.gradle/caches/8.13/transforms/f800e0db397828081610b95f256ce225/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/axil/.gradle/caches/8.13/transforms/f800e0db397828081610b95f256ce225/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/axil/.gradle/caches/8.13/transforms/90608a635f0ebb0c10343fb8e8740eff/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/axil/.gradle/caches/8.13/transforms/90608a635f0ebb0c10343fb8e8740eff/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.core:core:1.17.0] /Users/axil/.gradle/caches/8.13/transforms/3e2398bc8cea59b2cfb9fcf159006d8c/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.17.0] /Users/axil/.gradle/caches/8.13/transforms/3e2398bc8cea59b2cfb9fcf159006d8c/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/0e6a3f451d5a15ea64668bb2506e305a/transformed/ui-test-manifest-1.9.4/AndroidManifest.xml:22:5-27:19
@@ -248,8 +259,12 @@ MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/cache
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:21:5-23:151
 MERGED from [androidx.browser:browser:1.4.0] /Users/axil/.gradle/caches/8.13/transforms/0a5d184e1ac1ea76557b38691ec4e9aa/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.4.0] /Users/axil/.gradle/caches/8.13/transforms/0a5d184e1ac1ea76557b38691ec4e9aa/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/axil/.gradle/caches/8.13/transforms/05347f57cc2ece0c372fa0c63a63a251/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/axil/.gradle/caches/8.13/transforms/05347f57cc2ece0c372fa0c63a63a251/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:19:5-44
@@ -312,16 +327,18 @@ MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/axil/.gradle/cac
 MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/ad3ececa69a842af7548ecade28303c6/transformed/datastore-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/91768184c3e87637e21db4a7f7540358/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/axil/.gradle/caches/8.13/transforms/91768184c3e87637e21db4a7f7540358/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/add85cdb86f9ac3524622f675b7e3bf8/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/add85cdb86f9ac3524622f675b7e3bf8/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/axil/.gradle/caches/8.13/transforms/f800e0db397828081610b95f256ce225/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/axil/.gradle/caches/8.13/transforms/f800e0db397828081610b95f256ce225/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/axil/.gradle/caches/8.13/transforms/fd89f42f700629a3c7bf79df88513bd9/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/axil/.gradle/caches/8.13/transforms/fd89f42f700629a3c7bf79df88513bd9/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/axil/.gradle/caches/8.13/transforms/90608a635f0ebb0c10343fb8e8740eff/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/axil/.gradle/caches/8.13/transforms/90608a635f0ebb0c10343fb8e8740eff/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/axil/.gradle/caches/8.13/transforms/98a830d555201b1c4ee79d4a063d3795/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/axil/.gradle/caches/8.13/transforms/98a830d555201b1c4ee79d4a063d3795/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/axil/.gradle/caches/8.13/transforms/0555762f3bcbfa047c1123c5d7b199dd/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -378,6 +395,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/axil
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/axil/.gradle/caches/8.13/transforms/50fa59b620c5eaab637cde326f6242a1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/axil/.gradle/caches/8.13/transforms/3fbb693d4a628cd50b212271630b5a2c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/axil/.gradle/caches/8.13/transforms/3fbb693d4a628cd50b212271630b5a2c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/axil/.gradle/caches/8.13/transforms/122e8ba2c76107d4ce315e227e7f63ac/transformed/grpc-android-1.62.2/AndroidManifest.xml:5:5-44
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/axil/.gradle/caches/8.13/transforms/122e8ba2c76107d4ce315e227e7f63ac/transformed/grpc-android-1.62.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/a11a7fc9596c3636838522e85b022cb9/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/a11a7fc9596c3636838522e85b022cb9/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/axil/.gradle/caches/8.13/transforms/7460a4618fcc7ff3b684b076d412d9d8/transformed/core-common-2.0.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/axil/.gradle/caches/8.13/transforms/7460a4618fcc7ff3b684b076d412d9d8/transformed/core-common-2.0.3/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
@@ -390,8 +411,12 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth-ktx:23.1.0] /Users/axil/.gradle/caches/8.13/transforms/015b7b082b1a397d984cdda7a16fd5c1/transformed/firebase-auth-ktx-23.1.0/AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:30:9-38:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:30:9-38:19
 	android:exported
@@ -416,8 +441,12 @@ ADDED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/ca
 		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.4] /Users/axil/.gradle/caches/8.13/transforms/d7eb277c2e9e0bdeefa721d2fde13f8a/transformed/ui-tooling/AndroidManifest.xml:24:13-71
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/axil/.gradle/caches/8.13/transforms/8469aabf8c442a22b25d7f642d59c2fb/transformed/recaptcha-18.6.1/AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/axil/.gradle/caches/8.13/transforms/8469aabf8c442a22b25d7f642d59c2fb/transformed/recaptcha-18.6.1/AndroidManifest.xml:8:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/axil/.gradle/caches/8.13/transforms/122e8ba2c76107d4ce315e227e7f63ac/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/axil/.gradle/caches/8.13/transforms/122e8ba2c76107d4ce315e227e7f63ac/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
@@ -474,12 +503,30 @@ ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches
 		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/axil/.gradle/caches/8.13/transforms/cc3486997a63508d66492cac39826a2b/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar
+ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/axil/.gradle/caches/8.13/transforms/cd0c1be642e0d0474275e01964ec7117/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:13:17-129
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
 	android:value
 		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/axil/.gradle/caches/8.13/transforms/c9afaba19a9df62627884148dccc822b/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/axil/.gradle/caches/8.13/transforms/d18be862fd0add65b36a6f23c8935912/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/axil/.gradle/caches/8.13/transforms/48e9ecf5b6c984f7729482b9afd0603f/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
 	android:authorities
@@ -581,19 +628,19 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/axil/.gradle/cach
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/axil/.gradle/caches/8.13/transforms/2f2e9a729fe69034f7c55a413841a8c4/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/axil/.gradle/caches/8.13/transforms/9eded6e7f0756d2478d91870ebbcf6a5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/axil/.gradle/caches/8.13/transforms/c245675c499cecf08f5b7c0665f8d2a5/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+ADDED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+		ADDED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/axil/.gradle/caches/8.13/transforms/4855a43aabf3dcd693496b83d4fc35d2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+		ADDED from [com.google.android.gms:play-services-basement:18.8.0] /Users/axil/.gradle/caches/8.13/transforms/a63d6d034caa55125473c4e4fb6a8d7c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:22:13-58
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.17.0] /Users/axil/.gradle/caches/8.13/transforms/3e2398bc8cea59b2cfb9fcf159006d8c/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel

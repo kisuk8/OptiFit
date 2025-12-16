@@ -156,17 +156,16 @@ fun WorkoutDetailScreen(navController: NavController, workoutId: String) {
 
             item {
                 Button(
-                    onClick = { isStarted = !isStarted },
+                    onClick = {
+                        navController.navigate("timer/${workoutDetails.name}")
+                    },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp)
-                        .padding(horizontal = 16.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary
-                    )
+                        .padding(horizontal = 16.dp)
                 ) {
                     Text(
-                        if (isStarted) "IN PROGRESS" else "START",
+                        text = "START WORKOUT",
                         fontWeight = FontWeight.Bold,
                         fontSize = 16.sp,
                         color = Color.White
