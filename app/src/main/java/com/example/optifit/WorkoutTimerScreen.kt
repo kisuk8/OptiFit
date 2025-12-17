@@ -176,7 +176,7 @@ fun WorkoutTimerScreen(
                     verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
 
-                    Text("How challenging was this workout?")
+                    Text("How engaged and motivated were you during this workout?")
 
                     Row(
                         modifier = Modifier

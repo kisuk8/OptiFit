@@ -46,7 +46,7 @@ fun ChatScreen(navController: NavController) {
     val scope = rememberCoroutineScope()
 
     // ⚠️ Use BuildConfig.OPENAI_API_KEY in real app
-    val chatGPT = remember { ChatGPT("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") }
+    val chatGPT = remember { ChatGPT("put_the_api_key_here") }
 
     var messages by remember {
         mutableStateOf(
