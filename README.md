@@ -49,6 +49,8 @@ git clone https://github.com/kisuk8/OptiFit.git
 
 ### 2- Make sure the gradle files are properly synced
 
+### 3- Paste the OPEN AI API KEY on ChatScreen.kt - line 49. The API Key is written in Appendix H on the report
+
 ### 3- Create an account using the Sign Up Button and Login with your created credentials
 
 ### 4- Have fun!
